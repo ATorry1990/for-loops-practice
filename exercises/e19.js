@@ -7,6 +7,13 @@
 export function reverseArray(array) {
   // Your code goes here...
 
+  let arr = [];
+  for (let i = array.length; i >= 0; i--) {
+    if (array[i] !== undefined) {
+      arr.push(array[i]);
+    }
+  }
+  return arr;
 }
 
 

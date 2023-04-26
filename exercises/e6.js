@@ -6,6 +6,13 @@
 export function getClientWithNoMoney(array) {
   // Your code goes here...
 
+  let nonPos = [];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].balance < 1) {
+      nonPos.push(array[i].name);
+    }
+  }
+  return nonPos;
 }
 
 // === TEST YOURSELF ===
